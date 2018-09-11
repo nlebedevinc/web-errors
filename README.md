@@ -1,8 +1,7 @@
 ## Error interfaces for BFF and Frontend applications
 
 That repository contain basic TypeScript error interfaces, that should
-be used on communication level between Backend Services and BFF layer and
-BFF layer and Frontend Application
+be used on communication level between Backend Services and client layer of Frontend Application
 
 ### Motivation
 
