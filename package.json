@@ -1,0 +1,86 @@
+{
+  "name": "web-errors",
+  "version": "1.0.0",
+  "description": "A javascript interface for errors",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/es6/index.js",
+  "jsnext:main": "dist/es6/index.js",
+  "typings": "dist/typings/index.d.ts",
+  "author": "Nikolay.Lebedev",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nlebedevelop/web-errors.git"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "start": "echo 'Not implemented' && exit 0",
+    "prebuild:prod": "rimraf dist",
+    "build": "rimraf ./dist ./node_modules/.cache ./.nyc_output && npm run lint && tsc --project tsconfig.web.json && tsc --project tsconfig.server.json",
+    "build:prod": "cross-env NODE_ENV=production && npm run build",
+    "prepublish": "npm run build:prod",
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --coverage --watch",
+    "lint": "tslint --project tsconfig.server.json --config tslint.json && tslint --project tsconfig.web.json --config tslint.json"
+  },
+  "dependencies": {
+    "@types/jest": "^23.1.4",
+    "@types/node": "^8.10.21"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "jest": "^23.3.0",
+    "rimraf": "^2.6.2",
+    "source-map-support": "^0.5.6",
+    "ts-jest": "^23.0.0",
+    "tslib": "^1.9.2",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "rootDir": ".",
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    },
+    "verbose": true,
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.server.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist/",
+    "declarationDir": "./dist/typings",
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "es6",
+    "target": "es6",
+    "moduleResolution": "node",
+    "pretty": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "strict": true,
+    "allowJs": false,
+    "alwaysStrict": true,
+    "importHelpers": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true
+  }
+}
