@@ -1,16 +1,9 @@
-## Error interfaces for BFF and Frontend applications
+# WebErrors
+
+[![Build Status](https://travis-ci.org/nlebedevinc/web-errors.svg?branch=master)](https://travis-ci.org/nlebedevinc/web-errors)
 
 That repository contain basic TypeScript error interfaces, that should
 be used on communication level between Backend Services and client layer of Frontend Application
-
-### Motivation
-
-We should create standards for processing error responses from backend
-and transpire it into Frontend application. Different instances of error
-objects, should make easy to process errors in some situation.
-
-Currently we are checking only error codes and it have some sense, but
-for correct processing of errors, we need additional functionality.
 
 ### Structure
 
@@ -33,7 +26,7 @@ If the client is sending data, a server implementation using TCP SHOULD be caref
 
 ### Using of errors
 
-It is wery easy, to inport a required error code and use them
+It is wery easy, to import a required error code and use them
 
 ```typescript
 import { Error401 } from 'web-errors'
