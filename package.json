@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@types/jest": "^23.1.4",
-    "@types/node": "^12.7.8"
+    "@types/node": "^12.11.5"
   },
   "devDependencies": {
     "cross-env": "^6.0.0",
