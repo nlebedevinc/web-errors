@@ -28,7 +28,7 @@
     "lint": "tslint --project tsconfig.server.json --config tslint.json && tslint --project tsconfig.web.json --config tslint.json"
   },
   "dependencies": {
-    "@types/jest": "^23.1.4",
+    "@types/jest": "^24.0.19",
     "@types/node": "^12.11.7"
   },
   "devDependencies": {
