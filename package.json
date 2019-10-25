@@ -36,7 +36,7 @@
     "jest": "^21.2.1",
     "rimraf": "^3.0.0",
     "source-map-support": "^0.5.13",
-    "ts-jest": "^23.0.0",
+    "ts-jest": "^24.1.0",
     "tslib": "^1.10.0",
     "tslint": "^5.10.0",
     "tslint-config-airbnb": "^5.11.0",
