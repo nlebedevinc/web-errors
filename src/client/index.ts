@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
+
 export { default as Error400 } from './400'
 export { default as Error401 } from './401'
 export { default as Error402 } from './402'
@@ -30,5 +32,4 @@ export { default as Error451 } from './451'
 /**
  * Interface describes Client Error Response codes
  */
-export interface ClientErrorResponse {
-}
+export interface ClientErrorResponse {}
