@@ -1,5 +1,4 @@
 import {
-  ServerErrorResponse,
   Error500,
   Error501,
   Error502,

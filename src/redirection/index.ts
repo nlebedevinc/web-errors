@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 export { default as Error300 } from './300'
 export { default as Error301 } from './301'
 export { default as Error302 } from './302'

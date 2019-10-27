@@ -19,28 +19,25 @@
   "scripts": {
     "start": "echo 'Not implemented' && exit 0",
     "prebuild:prod": "rimraf dist",
-    "build": "rimraf ./dist ./node_modules/.cache ./.nyc_output && npm run lint && tsc --project tsconfig.web.json && tsc --project tsconfig.server.json",
+    "build": "rimraf ./dist ./node_modules/.cache ./.nyc_output && npm run lint && tsc --project tsconfig.es6.json && tsc --project tsconfig.common.json",
     "build:prod": "cross-env NODE_ENV=production && npm run build",
     "prepublish": "npm run build:prod",
-    "test": "jest",
-    "test:cov": "jest --coverage",
-    "test:watch": "jest --coverage --watch",
-    "lint": "tslint --project tsconfig.server.json --config tslint.json && tslint --project tsconfig.web.json --config tslint.json"
+    "lint": "eslint --ext ts ."
   },
   "dependencies": {
-    "@types/jest": "^23.1.4",
+    "@types/jest": "^24.0.20",
     "@types/node": "^12.11.7"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0",
     "cross-env": "^6.0.3",
-    "jest": "^21.2.1",
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0",
     "rimraf": "^3.0.0",
-    "source-map-support": "^0.5.13",
-    "ts-jest": "^23.0.0",
+    "ts-jest": "^24.1.0",
     "tslib": "^1.10.0",
-    "tslint": "^5.10.0",
-    "tslint-config-airbnb": "^5.11.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.6.4"
   },
   "jest": {
     "rootDir": ".",

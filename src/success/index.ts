@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 export { default as Error200 } from './200'
 export { default as Error201 } from './201'
 export { default as Error202 } from './202'
