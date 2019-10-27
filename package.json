@@ -22,7 +22,8 @@
     "build": "rimraf ./dist ./node_modules/.cache ./.nyc_output && npm run lint && tsc --project tsconfig.es6.json && tsc --project tsconfig.common.json",
     "build:prod": "cross-env NODE_ENV=production && npm run build",
     "prepublish": "npm run build:prod",
-    "lint": "eslint --ext ts ."
+    "lint": "eslint --ext ts .",
+    "test": "jest"
   },
   "dependencies": {
     "@types/jest": "^24.0.20",
@@ -76,7 +77,7 @@
     ],
     "globals": {
       "ts-jest": {
-        "tsConfigFile": "tsconfig.server.json"
+        "tsConfigFile": "tsconfig.common.json"
       }
     }
   }
