@@ -1,4 +1,4 @@
-# WebErrors
+# Web Errors
 
 [![Build Status](https://travis-ci.org/nlebedevinc/web-errors.svg?branch=master)](https://travis-ci.org/nlebedevinc/web-errors)
 
