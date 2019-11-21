@@ -29,7 +29,7 @@ import {
   Error400,
 } from '../index'
 
-describe('Client error responses', async () => {
+describe('Client error responses', () => {
   test('Error400', async () => {
     const obj = new Error400(new Error())
 
