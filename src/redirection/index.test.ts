@@ -10,7 +10,7 @@ import {
   Error308,
 } from '../index'
 
-describe('Client error responses', async () => {
+describe('Client error responses', () => {
   test('Error300', async () => {
     const obj = new Error300(new Error())
 
