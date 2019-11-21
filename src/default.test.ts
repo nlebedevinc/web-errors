@@ -1,6 +1,6 @@
 import { DefaultError } from './default'
 
-describe('Default Error Class', async () => {
+describe('Default Error Class', () => {
   test('Full parameters set', async () => {
     const obj = new DefaultError({
       name: 'nameString',
