@@ -6,8 +6,8 @@
   "module": "dist/es6/index.js",
   "jsnext:main": "dist/es6/index.js",
   "typings": "dist/typings/index.d.ts",
-  "author": "Nikolay.Lebedev",
-  "license": "UNLICENSED",
+  "author": "Nikolay Lebedev",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:nlebedevelop/web-errors.git"
@@ -23,7 +23,10 @@
     "build:prod": "cross-env NODE_ENV=production && npm run build",
     "prepublish": "npm run build:prod",
     "lint": "eslint --ext ts .",
-    "test": "jest"
+    "test": "jest",
+    "docs:api": "documentation build src/** -f md -o docs/project/api.md",
+    "docs:serve": "npm run docs:build && gitbook serve docs",
+    "docs:build": "npm run docs:api && gitbook build docs"
   },
   "dependencies": {
     "@types/jest": "^24.0.23",
@@ -38,6 +41,7 @@
     "rimraf": "^3.0.0",
     "ts-jest": "^24.2.0",
     "tslib": "^1.10.0",
+    "typedoc": "^0.15.4",
     "typescript": "^3.7.3"
   },
   "jest": {
