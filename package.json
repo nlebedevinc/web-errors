@@ -7,7 +7,7 @@
   "jsnext:main": "dist/es6/index.js",
   "typings": "dist/typings/index.d.ts",
   "author": "Nikolay.Lebedev",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git@github.com:nlebedevelop/web-errors.git"
@@ -17,7 +17,6 @@
     "npm": ">=6"
   },
   "scripts": {
-    "start": "echo 'Not implemented' && exit 0",
     "prebuild:prod": "rimraf dist",
     "build": "rimraf ./dist ./node_modules/.cache ./.nyc_output && npm run lint && tsc --project tsconfig.es6.json && tsc --project tsconfig.common.json",
     "build:prod": "cross-env NODE_ENV=production && npm run build",
