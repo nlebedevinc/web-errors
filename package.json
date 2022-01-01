@@ -6,7 +6,7 @@
   "module": "dist/es6/index.js",
   "jsnext:main": "dist/es6/index.js",
   "typings": "dist/typings/index.d.ts",
-  "author": "Nikolay.Lebedev",
+  "author": "Nick Lebedev <nlebedevme@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
