@@ -17,14 +17,14 @@ interface DefaultErrorProps extends Error {
   /**
    * Additional debug information that should help detect a problem
    */
-  readonly debug?: object;
+  readonly debug?: Record<string, unknown>;
 }
 
 class DefaultError extends Error {
   /**
    * Additional debug information that should help detect a problem
    */
-  public readonly debug: object | undefined
+  public readonly debug: Record<string, unknown> | undefined
 
   constructor(props: DefaultErrorProps) {
     super(props.message)
