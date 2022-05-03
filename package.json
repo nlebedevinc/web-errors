@@ -24,7 +24,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.5.0",
     "@types/node": "^16.10.3"
   },
   "devDependencies": {
